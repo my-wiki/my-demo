@@ -13,11 +13,17 @@ sudo docker run --rm -it -v "$(pwd):/notebooks" itamtao/scrapy /bin/zsh
 ```
 scrapy crawl stack
 # You can render the output to a JSON file with this little command:
-crapy crawl stack -o items.json -t json
+scrapy crawl stack -o items.json -t json
 ```
 
 * It crawls through the pagination links at the bottom of each page and scrapes the questions (question title and URL) from each page.
 
 ```
 scrapy crawl stack_crawler
+```
+
+* It allows to parse a specified url link by a specific spider and save it as a file.
+
+```
+scrapy crawl test -a start_url="http://stackoverflow.com/questions?pagesize=50&sort=newest" -o items.json -t json
 ```
