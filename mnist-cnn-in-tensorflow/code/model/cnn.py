@@ -4,18 +4,12 @@
 """
 
 import tensorflow as tf
-import define_parameters as dp
 import settings.parameters as p
 
 
 def model(data, conv1_weights, conv1_biases, conv2_weights, conv2_biases,
           fc1_weights, fc1_biases, fc2_weights, fc2_biases,
           train=False):
-    """Define parameters"""
-    conv1_weights, conv1_biases, conv2_weights, conv2_biases, \
-        fc1_weights, fc1_biases, fc2_weights, fc2_biases \
-        = dp.define_layers_parameters()
-
     """The Model definition."""
     # 2D convolution, with 'SAME' padding (i.e. the output feature map has
     # the same size as the input). Note that {strides} is a 4D array whose

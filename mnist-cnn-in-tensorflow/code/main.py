@@ -12,7 +12,7 @@ import util.extract_label as el
 import util.logger as logger
 import util.error_rate as ue
 import settings.parameters as p
-import model.CNN as mc
+import model.cnn as mc
 import model.define_parameters as md
 
 log = logger.Logger.get_logger('Main')
