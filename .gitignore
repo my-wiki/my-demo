@@ -2,3 +2,7 @@
 */data*
 *figure*
 */runs*
+build
+code.egg-info
+dist
+.ipynb_checkpoints
